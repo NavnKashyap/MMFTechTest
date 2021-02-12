@@ -24,31 +24,14 @@ public class HttpsRequest {
     private Context ctx;
     private JSONObject jObject;
 
-    public HttpsRequest(String match, Map<String, String> params, Context ctx) {
-        this.match = match;
-        this.params = params;
-        this.ctx = ctx;
-    }
 
-    public HttpsRequest(String match, Map<String, String> params, Map<String, File> fileparams, Context ctx) {
-        this.match = match;
-        this.params = params;
-        this.fileparams = fileparams;
-        this.ctx = ctx;
-    }
 
     public HttpsRequest(String match, Context ctx) {
         this.match = match;
         this.ctx = ctx;
     }
 
-    public HttpsRequest(String match, JSONObject jObject, Context ctx) {
-        this.match = match;
-        this.jObject = jObject;
-        this.ctx = ctx;
 
-
-    }
 
       public void stringGet(final String TAG, final Helper h) {
         AndroidNetworking.get(Consts.BASE_URL + match)
