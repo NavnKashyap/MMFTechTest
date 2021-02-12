@@ -1,0 +1,81 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <com.mmfinfotech.NavneetTiwaritest.utils.CurvedBottomNavigationView
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:gravity="start"
+            app:hideOnScroll="false"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/tvHome"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/home_icon"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textAllCaps="false">
+
+                </TextView>
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/nav_Profile"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/profile_icon"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textAllCaps="false">
+
+                </TextView>
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/nav_Browse"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/browse_icon"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textAllCaps="false">
+
+                </TextView>
+
+
+
+
+
+
+            </LinearLayout>
+        </com.mmfinfotech.NavneetTiwaritest.utils.CurvedBottomNavigationView>
+
+    </RelativeLayout>
+
+
+
+</merge>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NavneetTiwaritest</string>
+    <string name="next">Next</string>
+
+
+    <string name="facebook_app_id">2802797373301495</string>
+    <string name="fb_login_protocol_scheme">fb2802797373301495</string>
+
+</resources>
